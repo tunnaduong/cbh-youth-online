@@ -17,6 +17,31 @@
 }
 
 .paw {
-  transform: matrix(-0.16, -0.99, -0.99, 0.16, 0, 0);
+  transform: matrix(-0.16, -0.39, -0.59, 0.06, -16.7, 0);
   position: absolute;
+}
+
+body {
+  zoom: 1.4;
+}
+
+.nav-active {
+  height: 85%;
+  border-bottom: 2.5px solid #319528;
+  margin-bottom: -24px;
+  font-size: 10px;
+  font-weight: 600;
+  color: black;
+}
+
+.nav-inactive {
+  height: 85%;
+  margin-bottom: -24px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #6b6b6b;
+}
+
+.long-shadow {
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
 }
