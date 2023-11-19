@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thanh niên Chuyên Biên Hòa Online</title>
     <link rel="stylesheet" href="./static/css/style.css" />
-    <script src="./static/js/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       type="module"
@@ -17,10 +16,10 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </head>
-  <body class="bg-[#F8F8F8]">
+  <body class="bg-[#F8F8F8] mt-12">
     <!-- Navbar -->
     <nav
-      class="px-4 py-2.5 bg-white shadow-md leading-[0] flex justify-between"
+      class="px-4 py-2.5 fixed w-[100%] z-50 overflow-hidden top-0 bg-white shadow-md leading-[0] flex justify-between"
     >
       <div class="flex flex-row">
         <!-- Logo -->
@@ -77,6 +76,7 @@
             class="bg-red-500 w-[4.5px] h-[4.5px] rounded-full absolute translate-x-[10.5px] -translate-y-3.5"
           ></div>
         </div>
+        <!-- Main menu -->
         <div class="nav-inactive mr-8">
           <div>Liên kết</div>
         </div>
@@ -91,8 +91,10 @@
         </div>
       </div>
     </nav>
+    <!-- Main body -->
     <div class="flex flex-row">
-      <div class="w-60 p-5">
+      <!-- Left side bar -->
+      <div class="w-60 p-5 sticky" id="left-sidebar">
         <p class="text-[10px] font-semibold text-[#6b6b6b] pb-2.5 ml-1.5">
           MENU
         </p>
@@ -152,8 +154,209 @@
           <div class="text-[#6B6B6B]">Đã lưu</div>
         </button>
       </div>
-      <div class="flex flex-1"></div>
-      <div class="w-60 p-5">
+      <!-- Main posts -->
+      <div class="flex flex-1 p-5 items-center flex-col">
+        <!-- Post 1 -->
+        <div
+          class="max-w-lg mb-5 long-shadow w-[100%] h-min flex flex-row rounded-lg p-3.5"
+        >
+          <div
+            class="min-w-[60px] items-center mt-1 flex-col flex ml-[-15px] text-[13px] font-semibold text-[#319527]"
+          >
+            <ion-icon
+              name="arrow-up-outline"
+              class="text-[19px] cursor-pointer"
+            ></ion-icon>
+            <span>17</span>
+            <ion-icon
+              name="arrow-down-outline"
+              class="text-[19px] text-gray-400 cursor-pointer"
+            ></ion-icon>
+            <div
+              class="bg-[#CDEBCA] cursor-pointer rounded-md w-[19px] h-[19px] mt-2 border-[#BFE5BB] border-[1.5px] flex items-center justify-center"
+              style="zoom: 1.2"
+            >
+              <ion-icon name="bookmark" style="zoom: 0.9"></ion-icon>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-[14px] font-semibold mb-1">
+              Bí kíp để "xử lí gọn" 50 câu Tiếng Anh trong 60 phút
+            </h1>
+            <p class="text-[11px]">
+              Có chiến lược làm bài thi rõ ràng, hiệu quả sẽ giúp sức rất nhiều
+              cho bạn bên cạnh kiến thức và kỹ năng tốt. Để trả lời được những
+              câu hỏi: làm sao để không bị áp lực thời gian đè bẹp? Làm sao để
+              trong 60 phút “xử lí gọn” 50 câu Tiếng Anh? Hãy cùng lắng nghe
+              những chia sẻ của cô Hương Fiona cách phân bổ thời gian làm bài
+              thi dưới đây.
+            </p>
+            <hr class="my-3 border-t-2" />
+            <div class="flex-row flex text-[9px] items-center">
+              <img
+                src="/static/img/tunganh.png"
+                class="rounded-full w-6"
+                alt="tunnaduong's avatar"
+              />
+              <span class="text-gray-500 ml-1.5">Đăng bởi</span>
+              <a href="#" class="text-[#319527] font-bold ml-0.5"
+                >Dương Tùng Anh</a
+              >
+              <span class="mb-2 ml-0.5 text-sm text-gray-500">.</span>
+              <span class="ml-0.5 text-gray-500">12 giờ trước</span>
+              <div
+                class="flex flex-1 flex-row-reverse items-center text-gray-500"
+              >
+                <span>243</span>
+                <ion-icon
+                  name="eye-outline"
+                  class="text-[15px] mr-1 ml-2"
+                ></ion-icon>
+                <span>20+</span>
+                <ion-icon
+                  name="chatbox-outline"
+                  class="text-[15px] mr-1"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Post 2 -->
+        <div
+          class="max-w-lg mb-5 long-shadow w-[100%] h-min flex flex-row rounded-lg p-3.5"
+        >
+          <div
+            class="min-w-[60px] items-center mt-1 flex-col flex ml-[-15px] text-[13px] font-semibold"
+          >
+            <ion-icon
+              name="arrow-up-outline"
+              class="text-[19px] text-gray-400 cursor-pointer"
+            ></ion-icon>
+            <span class="text-red-600">-5</span>
+            <ion-icon
+              name="arrow-down-outline"
+              class="text-[19px] text-red-600 cursor-pointer"
+            ></ion-icon>
+            <div
+              class="bg-[#EAEAEA] cursor-pointer rounded-md w-[19px] h-[19px] mt-2 flex items-center justify-center"
+              style="zoom: 1.2"
+            >
+              <ion-icon
+                name="bookmark"
+                class="text-[#CACACA]"
+                style="zoom: 0.9"
+              ></ion-icon>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-[14px] font-semibold mb-1">
+              Cho em hỏi học toán như nào để giỏi hơn ạ?
+            </h1>
+            <p class="text-[11px]">
+              Em năm nay lớp 12, vì nhà cũng khá giả nên cho đi học thêm. Nhưng
+              mà học thêm thì giải bài hơi bị rặp khuôn và em cảm thấy chưa thỏa
+              mãn với bản thân, nên là đầu năm lớp 11 em có mua sách về giải
+              nhưng sau 1 năm thì chả thấy bản thân em có tiến bộ gì.
+            </p>
+            <hr class="my-3 border-t-2" />
+            <div class="flex-row flex text-[9px] items-center">
+              <img
+                src="/static/img/danghai.png"
+                class="rounded-full w-6"
+                alt="ndhai1012's avatar"
+              />
+              <span class="text-gray-500 ml-1.5">Đăng bởi</span>
+              <a href="#" class="text-[#319527] font-bold ml-0.5"
+                >Nguyễn Đặng Hải</a
+              >
+              <span class="mb-2 ml-0.5 text-sm text-gray-500">.</span>
+              <span class="ml-0.5 text-gray-500">1 ngày trước</span>
+              <div
+                class="flex flex-1 flex-row-reverse items-center text-gray-500"
+              >
+                <span>23</span>
+                <ion-icon
+                  name="eye-outline"
+                  class="text-[15px] mr-1 ml-2"
+                ></ion-icon>
+                <span>05+</span>
+                <ion-icon
+                  name="chatbox-outline"
+                  class="text-[15px] mr-1"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Post 3 -->
+        <div
+          class="max-w-lg mb-5 long-shadow w-[100%] h-min flex flex-row rounded-lg p-3.5"
+        >
+          <div
+            class="min-w-[60px] items-center mt-1 flex-col flex ml-[-15px] text-[13px] font-semibold"
+          >
+            <ion-icon
+              name="arrow-up-outline"
+              class="text-[19px] text-gray-400 cursor-pointer"
+            ></ion-icon>
+            <span class="text-gray-400">1K</span>
+            <ion-icon
+              name="arrow-down-outline"
+              class="text-[19px] text-gray-400 cursor-pointer"
+            ></ion-icon>
+            <div
+              class="bg-[#EAEAEA] cursor-pointer rounded-md w-[19px] h-[19px] mt-2 flex items-center justify-center"
+              style="zoom: 1.2"
+            >
+              <ion-icon
+                name="bookmark"
+                class="text-[#CACACA]"
+                style="zoom: 0.9"
+              ></ion-icon>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-[14px] font-semibold mb-1">
+              Thông báo về việc đi học lại sau kì nghỉ dịch COVID-19
+            </h1>
+            <p class="text-[11px]">
+              THPT Chuyên Biên Hòa đã tổ chức dạy học trực tiếp trở lại cho học
+              sinh khối lớp 11 và 12 thuộc địa bàn có dịch COVID-19 cấp độ 1, 2.
+              Từ 10/1 tổ chức dạy học trực tiếp cho học sinh khối lớp 7, 8, 9
+            </p>
+            <hr class="my-3 border-t-2" />
+            <div class="flex-row flex text-[9px] items-center">
+              <img
+                src="/static/img/cbh.jpeg"
+                class="rounded-full w-6"
+                alt="bienhoadoantruong's avatar"
+              />
+              <span class="text-gray-500 ml-1.5">Đăng bởi</span>
+              <a href="#" class="text-[#319527] font-bold ml-0.5"
+                >Biên Hòa Đoàn Trường</a
+              >
+              <span class="mb-2 ml-0.5 text-sm text-gray-500">.</span>
+              <span class="ml-0.5 text-gray-500">1 tuần trước</span>
+              <div
+                class="flex flex-1 flex-row-reverse items-center text-gray-500"
+              >
+                <span>3976</span>
+                <ion-icon
+                  name="eye-outline"
+                  class="text-[15px] mr-1 ml-2"
+                ></ion-icon>
+                <span>45+</span>
+                <ion-icon
+                  name="chatbox-outline"
+                  class="text-[15px] mr-1"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right side bar -->
+      <div class="w-60 p-5" id="right-sidebar">
         <button
           class="mb-2 text-[11px] font-semibold bg-[#319527] flex items-center justify-center w-[100%] text-left leading-3 text-white rounded-lg p-1.5"
         >
@@ -161,15 +364,121 @@
           Tạo bài viết mới
         </button>
         <div class="bg-white text-[11px] p-2.5 mt-4 rounded-lg long-shadow">
-          <span class="font-bold text-[#6B6B6B]">Xếp hạng tháng</span>
-          <div class="flex flex-row">
-            <span class="">K63</span>
-            <span class="flex flex-1">12 Nga</span>
-            <span>-12 điểm</span>
-            <ion-icon name="ribbon-outline"></ion-icon>
+          <span class="font-bold text-[#6B6B6B] block">Xếp hạng tháng</span>
+          <div class="flex flex-row items-center mt-2">
+            <span
+              class="w-6 h-6 text-[10px] text-white bg-gray-300 rounded-full flex items-center justify-center"
+              >K63</span
+            >
+            <span class="flex flex-1 ml-1.5 font-semibold">12 Nga</span>
+            <span class="mr-1.5 text-[#C1C1C1]">-12 điểm</span>
+            <ion-icon
+              name="trophy"
+              class="text-[15px] text-yellow-400"
+            ></ion-icon>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <span
+              class="w-6 h-6 text-[10px] text-white bg-gray-300 rounded-full flex items-center justify-center"
+              >K64</span
+            >
+            <span class="flex flex-1 ml-1.5 font-semibold">11 Toán</span>
+            <span class="mr-1.5 text-[#C1C1C1]">-6 điểm</span>
+            <ion-icon
+              name="trophy"
+              class="text-[15px] text-yellow-400"
+            ></ion-icon>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <span
+              class="w-6 h-6 text-[10px] text-white bg-gray-300 rounded-full flex items-center justify-center"
+              >K65</span
+            >
+            <span class="flex flex-1 ml-1.5 font-semibold">10 Sử</span>
+            <span class="mr-1.5 text-[#C1C1C1]">-18 điểm</span>
+            <ion-icon
+              name="trophy"
+              class="text-[15px] text-yellow-400"
+            ></ion-icon>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <span
+              class="w-6 h-6 text-[10px] text-white bg-gray-300 rounded-full flex items-center justify-center"
+              >K9</span
+            >
+            <span class="flex flex-1 ml-1.5 font-semibold">9A1</span>
+            <span class="mr-1.5 text-[#C1C1C1]">-4 điểm</span>
+            <ion-icon
+              name="trophy"
+              class="text-[15px] text-yellow-400"
+            ></ion-icon>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <span
+              class="w-6 h-6 text-[10px] text-white bg-gray-300 rounded-full flex items-center justify-center"
+              >K10</span
+            >
+            <span class="flex flex-1 ml-1.5 font-semibold">8A2</span>
+            <span class="mr-1.5 text-[#C1C1C1]">-6 điểm</span>
+            <ion-icon
+              name="trophy"
+              class="text-[15px] text-yellow-400"
+            ></ion-icon>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <span
+              class="w-6 h-6 text-[10px] text-white bg-gray-300 rounded-full flex items-center justify-center"
+              >K11</span
+            >
+            <span class="flex flex-1 ml-1.5 font-semibold">7A1</span>
+            <span class="mr-1.5 text-[#C1C1C1]">-10 điểm</span>
+            <ion-icon
+              name="trophy"
+              class="text-[15px] text-yellow-400"
+            ></ion-icon>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <span
+              class="w-6 h-6 text-[10px] text-white bg-gray-300 rounded-full flex items-center justify-center"
+              >K12</span
+            >
+            <span class="flex flex-1 ml-1.5 font-semibold">6A2</span>
+            <span class="mr-1.5 text-[#C1C1C1]">-14 điểm</span>
+            <ion-icon
+              name="trophy"
+              class="text-[15px] text-yellow-400"
+            ></ion-icon>
+          </div>
+          <hr class="my-2" />
+          <div class="flex flex-row items-center">
+            <span
+              class="w-6 h-6 text-[10px] text-white bg-gray-300 rounded-full flex items-center justify-center"
+              >K63</span
+            >
+            <span class="flex flex-1 ml-1.5 font-semibold">Lớp bạn</span>
+            <span class="mr-1.5 text-[#C1C1C1]">-35 điểm</span>
+            <span class="text-green-500 font-bold">#3</span>
           </div>
         </div>
+        <div class="flex flex-row text-[10px] font-semibold p-3 text-[#BCBCBC]">
+          <div class="flex flex-1 flex-col gap-y-0.5">
+            <a href="#">Hỗ trợ</a>
+            <a href="#">Liên hệ</a>
+            <a href="#">Blog</a>
+            <a href="#">Quảng cáo</a>
+          </div>
+          <div class="flex flex-1 flex-col ml-5 gap-y-0.5">
+            <a href="#">Giới thiệu</a>
+            <a href="#">Việc làm</a>
+            <a href="#">Điều khoản</a>
+            <a href="#">Quyền riêng tư</a>
+          </div>
+        </div>
+        <p class="text-[8.5px] text-center text-[#BCBCBC]">
+          Fatties Software © 2022
+        </p>
       </div>
     </div>
+    <script src="./static/js/script.js"></script>
   </body>
 </html>
