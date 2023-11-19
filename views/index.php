@@ -13,6 +13,7 @@ include_once './includes/head.php';
   <div class="flex flex-row">
     <!-- Left side bar -->
     <?php
+    $active = "bangtin";
     include_once './includes/left-sidebar.php';
     ?>
     <!-- Main posts -->
@@ -127,6 +128,7 @@ include_once './includes/head.php';
         </div>
       </div>
     </div>
+    <!-- Right side bar -->
     <?php
     include_once './includes/right-sidebar.php';
     ?>
