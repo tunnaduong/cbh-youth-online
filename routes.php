@@ -12,7 +12,7 @@ require_once __DIR__ . '/router.php';
 get('/', 'views/index.php');
 
 get('/forum', 'views/forum.php');
-get('/recording', 'views/recording.php');
+get('/recordings', 'views/recordings.php');
 get('/youth-news', 'views/youth-news.php');
 get('/saved', 'views/saved.php');
 

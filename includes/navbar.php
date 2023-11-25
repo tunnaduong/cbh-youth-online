@@ -33,17 +33,17 @@
             <div class="bg-red-500 w-[4.5px] h-[4.5px] rounded-full absolute translate-x-[10.5px] -translate-y-3.5"></div>
         </div>
         <!-- Main menu -->
-        <div class="<?php echo $active == "lienket" ? "nav-active" : "nav-inactive" ?> mr-8">
+        <a href="/links" class="<?php echo $active == "lienket" ? "nav-active" : "nav-inactive" ?> mr-8">
             <div>Liên kết</div>
-        </div>
-        <div class="<?php echo $active == "tracuu" ? "nav-active" : "nav-inactive" ?> mr-3">
+        </a>
+        <a href="/lookup" class="<?php echo $active == "tracuu" ? "nav-active" : "nav-inactive" ?> mr-3">
             <div>Tra cứu</div>
-        </div>
-        <div class="<?php echo $active == "baocao" ? "nav-active" : "nav-inactive" ?> mr-3">
+        </a>
+        <a href="/report" class="<?php echo $active == "baocao" ? "nav-active" : "nav-inactive" ?> mr-3">
             <div>Báo cáo</div>
-        </div>
-        <div class="<?php echo $active == "congdong" ? "nav-active" : "nav-inactive" ?> mr-3">
+        </a>
+        <a href="/" class="<?php echo $active == "congdong" ? "nav-active" : "nav-inactive" ?> mr-3">
             <div>Cộng đồng</div>
-        </div>
+        </a>
     </div>
 </nav>

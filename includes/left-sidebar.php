@@ -15,7 +15,7 @@
         </div>
         <div class="<?php echo $active == "diendan" ? "text-[#319527]" : "text-[#6B6B6B]" ?>">Diễn đàn</div>
     </button>
-    <button onclick="location.href='/recording'" class="mb-2 text-[11px] font-semibold <?php echo $active == "loalon" ? "bg-[#E4EEE3]" : "" ?> flex items-center w-[100%] text-left <?php echo $active == "loalon" ? "text-[#319527]" : "text-[#CACACA]" ?> rounded-lg p-1.5">
+    <button onclick="location.href='/recordings'" class="mb-2 text-[11px] font-semibold <?php echo $active == "loalon" ? "bg-[#E4EEE3]" : "" ?> flex items-center w-[100%] text-left <?php echo $active == "loalon" ? "text-[#319527]" : "text-[#CACACA]" ?> rounded-lg p-1.5">
         <div class="<?php echo $active == "loalon" ? "bg-[#CDEBCA]" : "" ?> rounded-md w-[19px] h-[19px] mr-2 <?php echo $active == "loalon" ? "border-[#BFE5BB]" : "border-[#ECECEC]" ?> border-[1.5px] flex items-center justify-center" style="zoom: 1.2">
             <ion-icon name="megaphone" style="zoom: 0.9"></ion-icon>
         </div>
