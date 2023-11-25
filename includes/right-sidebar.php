@@ -58,16 +58,16 @@
     </div>
     <div class="flex flex-row text-[10px] font-semibold p-3 text-[#BCBCBC]">
         <div class="flex flex-1 flex-col gap-y-0.5">
-            <a href="#">Hỗ trợ</a>
-            <a href="#">Liên hệ</a>
-            <a href="#">Blog</a>
-            <a href="#">Quảng cáo</a>
+            <a href="#" class="w-fit">Hỗ trợ</a>
+            <a href="#" class="w-fit">Liên hệ</a>
+            <a href="#" class="w-fit">Blog</a>
+            <a href="#" class="w-fit">Quảng cáo</a>
         </div>
         <div class="flex flex-1 flex-col ml-5 gap-y-0.5">
-            <a href="#">Giới thiệu</a>
-            <a href="#">Việc làm</a>
-            <a href="#">Điều khoản</a>
-            <a href="#">Quyền riêng tư</a>
+            <a href="#" class="w-fit">Giới thiệu</a>
+            <a href="#" class="w-fit">Việc làm</a>
+            <a href="#" class="w-fit">Điều khoản</a>
+            <a href="#" class="w-fit">Quyền riêng tư</a>
         </div>
     </div>
     <p class="text-[8.5px] text-center text-[#BCBCBC]">
