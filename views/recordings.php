@@ -13,7 +13,7 @@ include_once './includes/head.php';
   <div class="flex flex-row">
     <!-- Left side bar -->
     <?php
-    $active = "loalon";
+    $active2 = "loalon";
     include_once './includes/left-sidebar.php';
     ?>
     <!-- Main body -->
@@ -121,6 +121,7 @@ include_once './includes/head.php';
     </div>
     <!-- Right side bar -->
     <?php
+    $btn = "ghiam";
     include_once './includes/right-sidebar.php';
     ?>
   </div>

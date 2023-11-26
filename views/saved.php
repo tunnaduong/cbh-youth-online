@@ -13,7 +13,7 @@ include_once './includes/head.php';
   <div class="flex flex-row">
     <!-- Left side bar -->
     <?php
-    $active = "daluu";
+    $active2 = "daluu";
     include_once './includes/left-sidebar.php';
     ?>
     <!-- Main body -->
@@ -25,7 +25,7 @@ include_once './includes/head.php';
     include_once './includes/right-sidebar.php';
     ?>
   </div>
-  <script src="./static/js/script.js"></script>
+  <script src="/static/js/script.js"></script>
 </body>
 
 </html>

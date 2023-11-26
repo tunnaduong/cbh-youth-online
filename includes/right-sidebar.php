@@ -1,9 +1,22 @@
 <!-- Right side bar -->
 <div class="w-60 p-5 h-min sticky top-[48px]" id="right-sidebar">
-    <button class="mb-2 text-[11px] font-semibold bg-[#319527] flex items-center justify-center w-[100%] text-left leading-3 text-white rounded-lg p-1.5">
-        <ion-icon name="add-outline" class="text-[16px] mr-1"></ion-icon>
-        Tạo bài viết mới
-    </button>
+    <?php
+    if (isset($btn) && $btn == "ghiam") {
+    ?>
+        <button class="mb-2 text-[11px] font-semibold bg-[#319527] flex items-center justify-center w-[100%] text-left leading-3 text-white rounded-lg p-1.5">
+            <ion-icon name="mic" class="text-[16px] mr-1"></ion-icon>
+            Đăng ghi âm mới
+        </button>
+    <?php
+    } else {
+    ?>
+        <button class="mb-2 text-[11px] font-semibold bg-[#319527] flex items-center justify-center w-[100%] text-left leading-3 text-white rounded-lg p-1.5">
+            <ion-icon name="add-outline" class="text-[16px] mr-1"></ion-icon>
+            Tạo bài viết mới
+        </button>
+    <?php
+    }
+    ?>
     <div class="bg-white text-[11px] p-2.5 mt-4 rounded-lg long-shadow">
         <span class="font-bold text-[#6B6B6B] block">Xếp hạng tháng</span>
         <div class="flex flex-row items-center mt-2">

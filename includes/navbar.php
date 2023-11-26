@@ -4,7 +4,7 @@
         <!-- Logo -->
         <a href="/" class="inline-block">
             <div class="flex gap-x-1 items-center">
-                <img src="./static/img/logo.png" alt="CYO's Logo" class="w-7 h-7" />
+                <img src="/static/img/logo.png" alt="CYO's Logo" class="w-7 h-7" />
                 <div class="text-[11px] font-light text-[#319527] leading-3">
                     <h1>Thanh niên</h1>
                     <h1 class="font-bold">Chuyên Biên Hòa Online</h1>
@@ -21,7 +21,7 @@
     </div>
     <div class="flex flex-row-reverse items-center gap-x-5">
         <div>
-            <img src="./static/img/hoangphat.jpeg" alt="Account" class="w-6 h-6 rounded-full" />
+            <img src="/static/img/hoangphat.jpeg" alt="Account" class="w-6 h-6 rounded-full" />
         </div>
         <div>
             <ion-icon name="notifications-outline" class="text-[#6B6B6B]"></ion-icon>

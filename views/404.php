@@ -20,7 +20,7 @@ include_once './includes/head.php';
       <a href="/" class="text-[#319528] text-[12px] mt-2 inline-block font-semibold">Quay lại</a>
     </center>
   </div>
-  <script src="./static/js/script.js"></script>
+  <script src="/static/js/script.js"></script>
 </body>
 
 </html>

@@ -25,6 +25,22 @@ body {
   zoom: 1.4;
 }
 
+nav {
+  --decoration-left: 50%;
+  --decoration-width: 0;
+}
+
+nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: var(--decoration-left);
+  width: var(--decoration-width);
+  height: 4px;
+  background: skyblue;
+  transition: 300ms;
+}
+
 .nav-active {
   height: 85%;
   border-bottom: 2.5px solid #319528;
@@ -44,4 +60,8 @@ body {
 
 .long-shadow {
   box-shadow: 0px 7px 40px 20px rgba(0, 0, 0, 0.05);
+}
+
+#nprogress .bar {
+  background: #319528 !important;
 }

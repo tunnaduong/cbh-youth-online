@@ -6,14 +6,14 @@ include_once './includes/head.php';
 
 <body class="bg-[#F8F8F8] mt-12">
   <?php
-  $active = "congdong";
+  $active = "baocao";
   include_once './includes/navbar.php';
   ?>
   <!-- Main body -->
   <div class="flex flex-row">
     <!-- Left side bar -->
     <?php
-    $active2 = "tintucdoan";
+    $active2 = "tapthelop";
     include_once './includes/left-sidebar.php';
     ?>
     <!-- Main body -->

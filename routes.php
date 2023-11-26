@@ -15,6 +15,9 @@ get('/forum', 'views/forum.php');
 get('/recordings', 'views/recordings.php');
 get('/youth-news', 'views/youth-news.php');
 get('/saved', 'views/saved.php');
+get('/report', 'views/report.php');
+get('/report/class', 'views/report.php');
+get('/report/student', 'views/report-student.php');
 
 // For GET or POST
 // The 404.php which is inside the views folder will be called
