@@ -10,4 +10,5 @@
     <script src="/static/js/nprogress.js"></script>
     <link rel="stylesheet" href="/static/css/nprogress.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/static/js/script.js"></script>
 </head>
