@@ -25,6 +25,11 @@ $(document).on({
   },
 });
 
+$(document).ready(function () {
+  NProgress.start();
+  NProgress.done();
+});
+
 $("html").on("click", "[href]", function (e) {
   e.preventDefault(); // cancel click
   var url = $(this).attr("href");

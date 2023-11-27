@@ -34,16 +34,16 @@
         </div>
         <!-- Main menu -->
         <a href="/links" class="<?php echo $active == "lienket" ? "nav-active" : "nav-inactive" ?> mr-8">
-            <div>Liên kết</div>
+            <div class="whitespace-nowrap">Liên kết</div>
         </a>
         <a href="/lookup" class="<?php echo $active == "tracuu" ? "nav-active" : "nav-inactive" ?> mr-3">
-            <div>Tra cứu</div>
+            <div class="whitespace-nowrap">Tra cứu</div>
         </a>
         <a href="/report" class="<?php echo $active == "baocao" ? "nav-active" : "nav-inactive" ?> mr-3">
-            <div>Báo cáo</div>
+            <div class="whitespace-nowrap">Báo cáo</div>
         </a>
         <a href="/" class="<?php echo $active == "congdong" ? "nav-active" : "nav-inactive" ?> mr-3">
-            <div>Cộng đồng</div>
+            <div class="whitespace-nowrap">Cộng đồng</div>
         </a>
     </div>
 </nav>
