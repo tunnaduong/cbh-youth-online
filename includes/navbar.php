@@ -2,7 +2,7 @@
 <nav class="px-4 py-2.5 fixed w-[100%] z-50 overflow-hidden top-0 bg-white shadow-md leading-[0] flex justify-between">
     <div class="flex flex-row">
         <!-- Logo -->
-        <a href="/" class="inline-block">
+        <a id="logo" href="/" class="inline-block">
             <div class="flex gap-x-1 items-center">
                 <img src="/static/img/logo.png" alt="CYO's Logo" class="w-7 h-7" />
                 <div class="text-[11px] font-light text-[#319527] leading-3">
@@ -35,17 +35,19 @@
             </div>
         </div>
         <!-- Main menu -->
-        <a href="/links" class="menu-btn <?php echo isset($active) && $active == "lienket" ? "nav-active" : "" ?> mr-8">
-            Liên kết
-        </a>
-        <a href="/lookup" class="menu-btn <?php echo isset($active) && $active == "tracuu" ? "nav-active" : "" ?> mr-3">
-            Tra cứu
-        </a>
-        <a href="/report" class="menu-btn <?php echo isset($active) && $active == "baocao" ? "nav-active" : "" ?> mr-3">
-            Báo cáo
-        </a>
-        <a href="/" class="menu-btn <?php echo isset($active) && $active == "congdong" ? "nav-active" : "" ?> mr-3">
-            Cộng đồng
-        </a>
+        <div class="flex flex-row-reverse gap-x-3">
+            <a href="/links" class="menu-btn <?php echo isset($active) && $active == "lienket" ? "nav-active" : "" ?> mr-8">
+                Liên kết
+            </a>
+            <a href="/lookup" class="menu-btn <?php echo isset($active) && $active == "tracuu" ? "nav-active" : "" ?> mr-3">
+                Tra cứu
+            </a>
+            <a href="/report" class="menu-btn <?php echo isset($active) && $active == "baocao" ? "nav-active" : "" ?> mr-3">
+                Báo cáo
+            </a>
+            <a href="/" class="menu-btn <?php echo isset($active) && $active == "congdong" ? "nav-active" : "" ?> mr-3">
+                Cộng đồng
+            </a>
+        </div>
     </div>
 </nav>

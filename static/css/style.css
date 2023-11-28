@@ -57,7 +57,7 @@ nav::after {
 
 .menu-btn {
   height: 85%;
-  margin-bottom: -24px;
+  /* margin-bottom: -24px; */
   font-size: 10px;
   font-weight: 600;
   color: #6b6b6b;

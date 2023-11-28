@@ -70,3 +70,9 @@ $("html").on("click", "[href]", function (e) {
     },
   });
 });
+
+$("#logo").click(function () {
+  var current = document.getElementsByClassName("nav-active");
+  current[0].className = current[0].className.replace(" nav-active", "");
+  this.className += " nav-active";
+});
