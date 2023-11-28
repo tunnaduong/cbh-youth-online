@@ -3,16 +3,18 @@
 <?php
 $rel = isset($_GET["rel"]) ? $_GET["rel"] : null;
 
+$active = "baocao";
 if ($rel != "page") {
   include_once './includes/head.php';
 ?>
 
   <body class="bg-[#F8F8F8] mt-12">
+    <?php
+    include_once './includes/navbar.php';
+    ?>
     <div id="load">
     <?php
   }
-  $active = "baocao";
-  include_once './includes/navbar.php';
     ?>
     <!-- Main body -->
     <div class="flex flex-row">

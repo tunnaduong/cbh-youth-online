@@ -25,8 +25,19 @@ body {
   zoom: 1.4;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 nav {
-  --decoration-left: 50%;
+  --decoration-left: 53%;
   --decoration-width: 0;
 }
 
@@ -36,26 +47,31 @@ nav::after {
   bottom: 0;
   left: var(--decoration-left);
   width: var(--decoration-width);
-  height: 4px;
-  background: skyblue;
+  height: 2.5px;
+  background: #319528;
+}
+
+.nav-bar::after {
   transition: 300ms;
 }
 
-.nav-active {
-  height: 85%;
-  border-bottom: 2.5px solid #319528;
-  margin-bottom: -24px;
-  font-size: 10px;
-  font-weight: 600;
-  color: black;
-}
-
-.nav-inactive {
+.menu-btn {
   height: 85%;
   margin-bottom: -24px;
   font-size: 10px;
   font-weight: 600;
   color: #6b6b6b;
+  transition: 300ms;
+  white-space: nowrap;
+}
+
+.nav-active {
+  height: 85%;
+  /* border-bottom: 2.5px solid #319528; */
+  margin-bottom: -24px;
+  font-size: 10px;
+  font-weight: 600;
+  color: black;
 }
 
 .long-shadow {

@@ -20,30 +20,32 @@
         </div>
     </div>
     <div class="flex flex-row-reverse items-center gap-x-5">
-        <div>
-            <img src="/static/img/hoangphat.jpeg" alt="Account" class="w-6 h-6 rounded-full" />
-        </div>
-        <div>
-            <ion-icon name="notifications-outline" class="text-[#6B6B6B]"></ion-icon>
-            <div class="bg-red-500 w-[4.5px] h-[4.5px] rounded-full absolute translate-x-[8.5px] -translate-y-3.5"></div>
-        </div>
-        <div>
-            <ion-icon name="chatbubble-outline" class="text-[#6B6B6B]"></ion-icon>
-            <ion-icon name="flash" class="paw text-[#6B6B6B]"></ion-icon>
-            <div class="bg-red-500 w-[4.5px] h-[4.5px] rounded-full absolute translate-x-[10.5px] -translate-y-3.5"></div>
+        <div class="flex flex-row-reverse items-center gap-x-5 w-24">
+            <div>
+                <img src="/static/img/hoangphat.jpeg" alt="Account" class="w-6 h-6 rounded-full" />
+            </div>
+            <div>
+                <ion-icon name="notifications-outline" class="text-[#6B6B6B]"></ion-icon>
+                <div class="bg-red-500 w-[4.5px] h-[4.5px] rounded-full absolute translate-x-[8.5px] -translate-y-3.5"></div>
+            </div>
+            <div>
+                <ion-icon name="chatbubble-outline" class="text-[#6B6B6B]"></ion-icon>
+                <ion-icon name="flash" class="paw text-[#6B6B6B]"></ion-icon>
+                <div class="bg-red-500 w-[4.5px] h-[4.5px] rounded-full absolute translate-x-[10.5px] -translate-y-3.5"></div>
+            </div>
         </div>
         <!-- Main menu -->
-        <a href="/links" class="<?php echo $active == "lienket" ? "nav-active" : "nav-inactive" ?> mr-8">
-            <div class="whitespace-nowrap">Liên kết</div>
+        <a href="/links" class="menu-btn <?php echo isset($active) && $active == "lienket" ? "nav-active" : "" ?> mr-8">
+            Liên kết
         </a>
-        <a href="/lookup" class="<?php echo $active == "tracuu" ? "nav-active" : "nav-inactive" ?> mr-3">
-            <div class="whitespace-nowrap">Tra cứu</div>
+        <a href="/lookup" class="menu-btn <?php echo isset($active) && $active == "tracuu" ? "nav-active" : "" ?> mr-3">
+            Tra cứu
         </a>
-        <a href="/report" class="<?php echo $active == "baocao" ? "nav-active" : "nav-inactive" ?> mr-3">
-            <div class="whitespace-nowrap">Báo cáo</div>
+        <a href="/report" class="menu-btn <?php echo isset($active) && $active == "baocao" ? "nav-active" : "" ?> mr-3">
+            Báo cáo
         </a>
-        <a href="/" class="<?php echo $active == "congdong" ? "nav-active" : "nav-inactive" ?> mr-3">
-            <div class="whitespace-nowrap">Cộng đồng</div>
+        <a href="/" class="menu-btn <?php echo isset($active) && $active == "congdong" ? "nav-active" : "" ?> mr-3">
+            Cộng đồng
         </a>
     </div>
 </nav>

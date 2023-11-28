@@ -8,10 +8,12 @@ if ($rel != "page") {
 ?>
 
   <body class="bg-[#F8F8F8] mt-12">
+    <?php
+    include_once './includes/navbar.php';
+    ?>
     <div id="load">
     <?php
   }
-  include_once './includes/navbar.php';
     ?>
     <!-- Main body -->
     <div class="flex flex-1 items-center justify-center" style="display: block;position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">

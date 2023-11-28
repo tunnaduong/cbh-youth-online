@@ -1,7 +1,15 @@
 $body = $("#load");
 document.addEventListener("DOMContentLoaded", function () {
   var nav = document.querySelector("nav");
-  nav.addEventListener("mouseclick", function (event) {
+  var curr = document.getElementsByClassName("nav-active");
+  nav.style.setProperty("--decoration-left", curr[0].offsetLeft + "px");
+  nav.style.setProperty("--decoration-width", curr[0].offsetWidth + "px");
+
+  setTimeout(function () {
+    var nav = document.querySelector("nav");
+    nav.className += " nav-bar";
+  }, 300);
+  nav.addEventListener("click", function (event) {
     if (event.target.tagName == "A") {
       nav.style.setProperty(
         "--decoration-left",
@@ -13,6 +21,25 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
   });
+
+  // Get all buttons with class="btn" inside the container
+  var btns = document.getElementsByClassName("menu-btn");
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("nav-active");
+      current[0].className = current[0].className.replace(" nav-active", "");
+      this.className += " nav-active";
+    });
+  }
+});
+
+$(window).resize(function () {
+  var nav = document.querySelector("nav");
+  var curr = document.getElementsByClassName("nav-active");
+  nav.style.setProperty("--decoration-left", curr[0].offsetLeft + "px");
+  nav.style.setProperty("--decoration-width", curr[0].offsetWidth + "px");
 });
 
 NProgress.configure({ showSpinner: false });
