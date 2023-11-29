@@ -36,7 +36,7 @@
         </div>
         <!-- Main menu -->
         <div class="flex flex-row-reverse gap-x-3">
-            <a href="/links" class="menu-btn <?php echo isset($active) && $active == "lienket" ? "nav-active" : "" ?> mr-8">
+            <a href="/explore" class="menu-btn <?php echo isset($active) && $active == "lienket" ? "nav-active" : "" ?> mr-8">
                 Khám phá
             </a>
             <a href="/lookup" class="menu-btn <?php echo isset($active) && $active == "tracuu" ? "nav-active" : "" ?> mr-3">
