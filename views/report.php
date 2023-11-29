@@ -125,31 +125,74 @@ if ($rel != "page") {
           <div class="flex flex-row justify-center items-center mb-7">
             <div class="flex flex-col items-center">
               <div class="w-6 h-6 rounded-full bg-[#319527] flex items-center justify-center text-white">1</div>
-              <span class="text-[10px] mt-0.5 font-semibold">Điền thông tin</span>
+              <span class="text-[10px] mt-0.5 font-semibold text-center">Điền thông tin</span>
             </div>
             <div class="w-[84px] h-[0.7px] bg-gray-500 mb-4 -ml-3 "></div>
             <div class="flex flex-col items-center">
               <div class="w-6 h-6 rounded-full bg-gray-400 flex items-center justify-center text-white">2</div>
-              <span class="text-[10px] mt-0.5 text-gray-400">Xác nhận</span>
+              <span class="text-[10px] mt-0.5 text-gray-400 text-center">Xác nhận</span>
             </div>
             <div class="w-[84px] h-[0.7px] bg-gray-500 mb-4 -mr-1.5"></div>
             <div class="flex flex-col items-center">
               <div class="w-6 h-6 rounded-full bg-gray-400 flex items-center justify-center text-white">3</div>
-              <span class="text-[10px] mt-0.5 text-gray-400">Gửi báo cáo</span>
+              <span class="text-[10px] mt-0.5 text-gray-400 text-center">Gửi báo cáo</span>
             </div>
           </div>
-          <form action="/api/v1.0/report/class" class="px-5 pb-5">
+          <form action="/api/v1.0/report/class" method="post" class="px-5 pb-4">
             <div class="flex flex-col mb-2.5">
               <label for="class" class="flex items-center text-[11px]"><ion-icon name="location" class="mr-0.5"></ion-icon> Tên lớp</label>
               <select name="class" id="class" class="mt-1 text-[10.5px] text-gray-500 rounded-md p-1 bg-gray-100">
                 <optgroup label="Khối 12">
-                  <option value="12A1">12 Toán</option>
+                  <option>12 Toán - 12A1</option>
+                  <option>12 Lý - 12A2</option>
+                  <option>12 Hoá - 12A3</option>
+                  <option>12 Sinh - 12A4</option>
+                  <option>12 Tin - 12A5</option>
+                  <option>12 Văn - 12C1</option>
+                  <option>12 Sử - 12C2</option>
+                  <option>12 Địa - 12C3</option>
+                  <option>12 Anh - 12C4</option>
+                  <option>12 Nga - 12C5</option>
+                </optgroup>
+                <optgroup label="Khối 11">
+                  <option>11 Toán - 11A1</option>
+                  <option>11 Lý - 11A2</option>
+                  <option>11 Hoá - 11A3</option>
+                  <option>11 Sinh - 11A4</option>
+                  <option>11 Tin - 11A5</option>
+                  <option>11 Văn - 11C1</option>
+                  <option>11 Sử - 11C2</option>
+                  <option>11 Địa - 11C3</option>
+                  <option>11 Anh - 11C4</option>
+                  <option>11 Nga - 11C5</option>
+                </optgroup>
+                <optgroup label="Khối 10">
+                  <option>10 Toán - 10A1</option>
+                  <option>10 Lý - 10A2</option>
+                  <option>10 Hoá - 10A3</option>
+                  <option>10 Sinh - 10A4</option>
+                  <option>10 Tin - 10A5</option>
+                  <option>10 Văn - 10C1</option>
+                  <option>10 Sử - 10C2</option>
+                  <option>10 Địa - 10C3</option>
+                  <option>10 Anh - 10C4</option>
+                  <option>10 Nga - 10C5</option>
+                </optgroup>
+                <optgroup label="THCS">
+                  <option>9A1</option>
+                  <option>9A2</option>
+                  <option>8A1</option>
+                  <option>8A2</option>
+                  <option>7A1</option>
+                  <option>7A2</option>
+                  <option>6A1</option>
+                  <option>6A2</option>
                 </optgroup>
               </select>
             </div>
             <div class="flex flex-col mb-2.5">
               <label for="time" class="flex items-center text-[11px]"><ion-icon name="time" class="mr-0.5"></ion-icon> Thời gian báo cáo</label>
-              <input disabled name="time" id="time" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-300" value="<?php echo rebuild_date('H:i l, d/m/Y') ?>"></input>
+              <input disabled name="time" id="time" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100" value="<?php echo rebuild_date('H:i l, d/m/Y') ?>"></input>
             </div>
             <div class="flex flex-row gap-x-4">
               <div class="flex flex-col flex-1 mb-2.5">
@@ -177,10 +220,14 @@ if ($rel != "page") {
                 <input placeholder="Nhập một lỗi vi phạm..." name="fault" id="fault" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100"></input>
               </div>
             </div>
-            <div class="flex flex-col mb-2.5">
+            <div class="flex flex-col mb-3.5">
               <label for="additional" class="flex items-center text-[11px]"><ion-icon name="chatbox-ellipses" class="mr-0.5 mt-0.5"></ion-icon>Ghi chú thêm</label>
-              <textarea name="additional" id="additional" cols="30" rows="10"></textarea>
+              <textarea name="additional" id="additional" cols="30" rows="3" placeholder="Nhập tại đây..." class="bg-gray-100 p-1.5 text-[10.5px] rounded-md mt-1 resize-none"></textarea>
             </div>
+            <center>
+              <a href="#" class="text-[10.5px] mb-3 block w-fit">Xem danh sách đầy đủ các lỗi vi phạm</a>
+              <button class="text-[11px] font-semibold bg-[#319527] text-white h-7 px-8 rounded-full">Tiếp tục</button>
+            </center>
           </form>
         </div>
       </div>
