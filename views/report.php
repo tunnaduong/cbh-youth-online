@@ -154,7 +154,7 @@ if ($rel != "page") {
             <div class="flex flex-row gap-x-4">
               <div class="flex flex-col flex-1 mb-2.5">
                 <label for="missing" class="flex items-center text-[11px]"><ion-icon name="remove-circle" class="mr-0.5"></ion-icon> Vắng</label>
-                <input min="0" max="35" type="number" placeholder="Để trống nếu đủ" name="missing" id="missing" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100"></input>
+                <input min="0" max="35" type="number" value="0" name="missing" id="missing" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100"></input>
               </div>
               <div class="flex flex-col flex-1 mb-2.5">
                 <label for="cleanliness" class="flex items-center text-[11px]"><ion-icon name="sparkles" class="mr-0.5"></ion-icon> Vệ sinh</label>
@@ -176,6 +176,10 @@ if ($rel != "page") {
                 <label for="fault" class="flex items-center text-[11px]"><ion-icon name="alert-circle" class="mr-0.5"></ion-icon>Lỗi vi phạm</label>
                 <input placeholder="Nhập một lỗi vi phạm..." name="fault" id="fault" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100"></input>
               </div>
+            </div>
+            <div class="flex flex-col mb-2.5">
+              <label for="additional" class="flex items-center text-[11px]"><ion-icon name="chatbox-ellipses" class="mr-0.5 mt-0.5"></ion-icon>Ghi chú thêm</label>
+              <textarea name="additional" id="additional" cols="30" rows="10"></textarea>
             </div>
           </form>
         </div>
