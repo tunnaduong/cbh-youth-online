@@ -2,9 +2,10 @@ $body = $("#load");
 document.addEventListener("DOMContentLoaded", function () {
   var nav = document.querySelector("nav");
   var curr = document.getElementsByClassName("nav-active");
-  nav.style.setProperty("--decoration-left", curr[0].offsetLeft + "px");
-  nav.style.setProperty("--decoration-width", curr[0].offsetWidth + "px");
-
+  if (curr.length != 0) {
+    nav.style.setProperty("--decoration-left", curr[0].offsetLeft + "px");
+    nav.style.setProperty("--decoration-width", curr[0].offsetWidth + "px");
+  }
   setTimeout(function () {
     var nav = document.querySelector("nav");
     nav.className += " nav-bar";
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "--decoration-width",
         event.target.offsetWidth + "px"
       );
+      event.target.className += " nav-active";
     }
   });
 
@@ -30,9 +32,22 @@ document.addEventListener("DOMContentLoaded", function () {
     btns[i].addEventListener("click", function () {
       var current = document.getElementsByClassName("nav-active");
       current[0].className = current[0].className.replace(" nav-active", "");
-      this.className += " nav-active";
+      //   this.className += " nav-active";
     });
   }
+
+  document.getElementById("logo").addEventListener("click", function () {
+    var current = document.getElementsByClassName("nav-active");
+    if (current.length != 0) {
+      current[0].className = current[0].className.replace(" nav-active", "");
+    }
+    var btns = document.getElementsByClassName("menu-btn");
+    btns[3].className += " nav-active";
+    var nav = document.querySelector("nav");
+    var curr = document.getElementsByClassName("nav-active");
+    nav.style.setProperty("--decoration-left", curr[0].offsetLeft + "px");
+    nav.style.setProperty("--decoration-width", curr[0].offsetWidth + "px");
+  });
 });
 
 $(window).resize(function () {
@@ -69,10 +84,4 @@ $("html").on("click", "[href]", function (e) {
       $("#load").html(data);
     },
   });
-});
-
-$("#logo").click(function () {
-  var current = document.getElementsByClassName("nav-active");
-  current[0].className = current[0].className.replace(" nav-active", "");
-  this.className += " nav-active";
 });
