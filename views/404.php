@@ -23,7 +23,7 @@ if ($rel != "page") {
         <p class="text-[12px] text-gray-500">Lỗi này thường do chủ sở hữu chỉ chia sẻ nội dung với một<br>nhóm nhỏ, thay đổi người được xem hoặc đã xóa nội dung.</p>
         <button onclick href='/' class="bg-[#319528] text-white text-[12px] font-semibold rounded-[5px] py-[5px] px-6 mt-3">Đi tới Bảng tin</button>
         <br>
-        <a href="/" class="text-[#319528] text-[12px] mt-2 inline-block font-semibold">Quay lại</a>
+        <a href="#" onclick="history.back()" class="text-[#319528] text-[12px] mt-2 inline-block font-semibold">Quay lại</a>
       </center>
     </div>
     <?php if ($rel != "page") {

@@ -138,7 +138,7 @@ if ($rel != "page") {
               <span class="text-[10px] mt-0.5 text-gray-400 text-center">Gửi báo cáo</span>
             </div>
           </div>
-          <form action="/api/v1.0/report/class" method="post" class="px-5 pb-4">
+          <form action="/report/class/confirm" method="post" class="px-5 pb-4">
             <div class="flex flex-col mb-2.5">
               <label for="class" class="flex items-center text-[11px]"><ion-icon name="location" class="mr-0.5"></ion-icon> Tên lớp</label>
               <select name="class" id="class" class="mt-1 text-[10.5px] text-gray-500 rounded-md p-1 bg-gray-100">
