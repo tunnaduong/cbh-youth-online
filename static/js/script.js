@@ -65,6 +65,7 @@ $(document).on({
     NProgress.start();
   },
   ajaxStop: function () {
+    openModal();
     NProgress.done();
   },
 });
@@ -87,3 +88,38 @@ $("html").on("click", "[href]", function (e) {
     },
   });
 });
+
+function openModal() {
+  var modal = $("#myModal");
+  var btn = $("#openModalBtn");
+  var closeBtn = $(".close");
+
+  // When the user clicks the button, open the modal
+  btn.click(function () {
+    modal.css("display", "block");
+  });
+
+  // When the user clicks on the close button, close the modal
+  closeBtn.click(function () {
+    modal.css("display", "none");
+  });
+
+  // When the user clicks outside the modal, close it
+  $(window).click(function (event) {
+    if (event.target == modal[0]) {
+      modal.css("display", "none");
+    }
+  });
+}
+
+// When the DOM is ready
+$(document).ready(function () {
+  openModal();
+});
+
+// $(document).ready(function() {
+//     $(window).resize(function() {
+//         var bodyheight = $(this).height();
+//         $("#sidebar").height(bodyheight);
+//     }).resize();
+// });

@@ -4,6 +4,7 @@
 $rel = isset($_GET["rel"]) ? $_GET["rel"] : null;
 
 $active = "congdong";
+$type = "ghiam";
 if ($rel != "page") {
   include_once './includes/head.php';
 ?>

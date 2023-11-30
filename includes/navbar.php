@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="px-4 py-2.5 fixed w-[100%] z-50 overflow-hidden top-0 bg-white shadow-md leading-[0] flex justify-between">
+<nav class="px-4 py-2.5 fixed w-[100%] overflow-hidden top-0 bg-white shadow-md leading-[0] flex justify-between">
     <div class="flex flex-row">
         <!-- Logo -->
         <a id="logo" href="/" class="inline-block">
@@ -50,4 +50,5 @@
             </a>
         </div>
     </div>
+    <!-- <div id="myModal" class="modal"></div> -->
 </nav>
