@@ -26,7 +26,7 @@ if ($rel != "page") {
       <!-- Main posts -->
       <div class="flex flex-1 p-5 items-center flex-col">
         <!-- Post 1 -->
-        <div class="max-w-lg mb-5 long-shadow w-[100%] h-min flex flex-row rounded-lg p-3.5">
+        <div class="max-w-lg mb-5 long-shadow w-[100%] h-min flex flex-row rounded-lg p-3.5 bg-white">
           <div class="min-w-[60px] items-center mt-1 flex-col flex ml-[-15px] text-[13px] font-semibold text-[#319527]">
             <ion-icon name="arrow-up-outline" class="text-[19px] cursor-pointer"></ion-icon>
             <span>17</span>
@@ -64,7 +64,7 @@ if ($rel != "page") {
           </div>
         </div>
         <!-- Post 2 -->
-        <div class="max-w-lg mb-5 long-shadow w-[100%] h-min flex flex-row rounded-lg p-3.5">
+        <div class="max-w-lg mb-5 long-shadow w-[100%] h-min flex flex-row rounded-lg p-3.5 bg-white">
           <div class="min-w-[60px] items-center mt-1 flex-col flex ml-[-15px] text-[13px] font-semibold">
             <ion-icon name="arrow-up-outline" class="text-[19px] text-gray-400 cursor-pointer"></ion-icon>
             <span class="text-red-600">-5</span>
@@ -100,7 +100,7 @@ if ($rel != "page") {
           </div>
         </div>
         <!-- Post 3 -->
-        <div class="max-w-lg mb-5 long-shadow w-[100%] h-min flex flex-row rounded-lg p-3.5">
+        <div class="max-w-lg mb-5 long-shadow w-[100%] h-min flex flex-row rounded-lg p-3.5 bg-white">
           <div class="min-w-[60px] items-center mt-1 flex-col flex ml-[-15px] text-[13px] font-semibold">
             <ion-icon name="arrow-up-outline" class="text-[19px] text-gray-400 cursor-pointer"></ion-icon>
             <span class="text-gray-400">1K</span>

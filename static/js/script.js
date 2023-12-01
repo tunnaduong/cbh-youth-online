@@ -50,6 +50,23 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.style.setProperty("--decoration-left", curr[0].offsetLeft + "px");
     nav.style.setProperty("--decoration-width", curr[0].offsetWidth + "px");
   });
+
+  var goToHome = document.getElementById("goToHome");
+
+  if (goToHome) {
+    goToHome.addEventListener("click", function () {
+      var current = document.getElementsByClassName("nav-active");
+      if (current.length != 0) {
+        current[0].className = current[0].className.replace(" nav-active", "");
+      }
+      var btns = document.getElementsByClassName("menu-btn");
+      btns[3].className += " nav-active";
+      var nav = document.querySelector("nav");
+      var curr = document.getElementsByClassName("nav-active");
+      nav.style.setProperty("--decoration-left", curr[0].offsetLeft + "px");
+      nav.style.setProperty("--decoration-width", curr[0].offsetWidth + "px");
+    });
+  }
 });
 
 $(window).resize(function () {
@@ -88,6 +105,15 @@ $("html").on("click", "[href]", function (e) {
     },
   });
 });
+
+window.onpopstate = function () {
+  $.ajax({
+    url: document.location + "?rel=page",
+    success: function (data) {
+      $("#load").html(data);
+    },
+  });
+};
 
 function openModal() {
   var modal = $("#myModal");
