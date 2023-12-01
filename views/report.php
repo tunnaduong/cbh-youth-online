@@ -143,50 +143,50 @@ if ($rel != "page") {
               <label for="class" class="flex items-center text-[11px]"><ion-icon name="location" class="mr-0.5"></ion-icon> Tên lớp</label>
               <select name="class" id="class" class="mt-1 text-[10.5px] text-gray-500 rounded-md p-1 bg-gray-100">
                 <optgroup label="Khối 12">
-                  <option>12 Toán - 12A1</option>
-                  <option>12 Lý - 12A2</option>
-                  <option>12 Hoá - 12A3</option>
-                  <option>12 Sinh - 12A4</option>
-                  <option>12 Tin - 12A5</option>
-                  <option>12 Văn - 12C1</option>
-                  <option>12 Sử - 12C2</option>
-                  <option>12 Địa - 12C3</option>
-                  <option>12 Anh - 12C4</option>
-                  <option>12 Nga - 12C5</option>
+                  <option value="12A1">12 Toán - 12A1</option>
+                  <option value="12A2">12 Lý - 12A2</option>
+                  <option value="12A3">12 Hoá - 12A3</option>
+                  <option value="12A4">12 Sinh - 12A4</option>
+                  <option value="12A5">12 Tin - 12A5</option>
+                  <option value="12C1">12 Văn - 12C1</option>
+                  <option value="12C2">12 Sử - 12C2</option>
+                  <option value="12C3">12 Địa - 12C3</option>
+                  <option value="12C4">12 Anh - 12C4</option>
+                  <option value="12C5">12 Nga - 12C5</option>
                 </optgroup>
                 <optgroup label="Khối 11">
-                  <option>11 Toán - 11A1</option>
-                  <option>11 Lý - 11A2</option>
-                  <option>11 Hoá - 11A3</option>
-                  <option>11 Sinh - 11A4</option>
-                  <option>11 Tin - 11A5</option>
-                  <option>11 Văn - 11C1</option>
-                  <option>11 Sử - 11C2</option>
-                  <option>11 Địa - 11C3</option>
-                  <option>11 Anh - 11C4</option>
-                  <option>11 Nga - 11C5</option>
+                  <option value="11A1">11 Toán - 11A1</option>
+                  <option value="11A2">11 Lý - 11A2</option>
+                  <option value="11A3">11 Hoá - 11A3</option>
+                  <option value="11A4">11 Sinh - 11A4</option>
+                  <option value="11A5">11 Tin - 11A5</option>
+                  <option value="11C1">11 Văn - 11C1</option>
+                  <option value="11C2">11 Sử - 11C2</option>
+                  <option value="11C3">11 Địa - 11C3</option>
+                  <option value="11C4">11 Anh - 11C4</option>
+                  <option value="11C5">11 Nga - 11C5</option>
                 </optgroup>
                 <optgroup label="Khối 10">
-                  <option>10 Toán - 10A1</option>
-                  <option>10 Lý - 10A2</option>
-                  <option>10 Hoá - 10A3</option>
-                  <option>10 Sinh - 10A4</option>
-                  <option>10 Tin - 10A5</option>
-                  <option>10 Văn - 10C1</option>
-                  <option>10 Sử - 10C2</option>
-                  <option>10 Địa - 10C3</option>
-                  <option>10 Anh - 10C4</option>
-                  <option>10 Nga - 10C5</option>
+                  <option value="10A1">10 Toán - 10A1</option>
+                  <option value="10A2">10 Lý - 10A2</option>
+                  <option value="10A3">10 Hoá - 10A3</option>
+                  <option value="10A4">10 Sinh - 10A4</option>
+                  <option value="10A5">10 Tin - 10A5</option>
+                  <option value="10C1">10 Văn - 10C1</option>
+                  <option value="10C2">10 Sử - 10C2</option>
+                  <option value="10C3">10 Địa - 10C3</option>
+                  <option value="10C4">10 Anh - 10C4</option>
+                  <option value="10C5">10 Nga - 10C5</option>
                 </optgroup>
                 <optgroup label="THCS">
-                  <option>9A1</option>
-                  <option>9A2</option>
-                  <option>8A1</option>
-                  <option>8A2</option>
-                  <option>7A1</option>
-                  <option>7A2</option>
-                  <option>6A1</option>
-                  <option>6A2</option>
+                  <option value="9A1">9A1</option>
+                  <option value="9A2">9A2</option>
+                  <option value="8A1">8A1</option>
+                  <option value="8A2">8A2</option>
+                  <option value="7A1">7A1</option>
+                  <option value="7A2">7A2</option>
+                  <option value="6A1">6A1</option>
+                  <option value="6A2">6A2</option>
                 </optgroup>
               </select>
             </div>
@@ -202,8 +202,8 @@ if ($rel != "page") {
               <div class="flex flex-col flex-1 mb-2.5">
                 <label for="cleanliness" class="flex items-center text-[11px]"><ion-icon name="sparkles" class="mr-0.5"></ion-icon> Vệ sinh</label>
                 <select name="cleanliness" id="cleanliness" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100">
-                  <option value="sach">Sạch</option>
-                  <option value="ban">Bẩn</option>
+                  <option value="clean">Sạch</option>
+                  <option value="dirty">Bẩn</option>
                 </select>
               </div>
             </div>
@@ -211,8 +211,8 @@ if ($rel != "page") {
               <div class="flex flex-col flex-1 mb-2.5">
                 <label for="uniform" class="flex items-center text-[11px]"><ion-icon name="shirt" class="mr-0.5"></ion-icon>Đồng phục</label>
                 <select name="uniform" id="uniform" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100">
-                  <option value="sach">Đủ</option>
-                  <option value="ban">Thiếu</option>
+                  <option value="full">Đủ</option>
+                  <option value="missing">Thiếu</option>
                 </select>
               </div>
               <div class="flex flex-col flex-1 mb-2.5">
