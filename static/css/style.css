@@ -122,3 +122,7 @@ nav::after {
   font-weight: bold;
   cursor: pointer;
 }
+
+input:disabled {
+  background-color: #fff;
+}

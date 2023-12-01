@@ -189,10 +189,11 @@ if ($rel != "page") {
                   <option value="6A2">6A2</option>
                 </optgroup>
               </select>
+              <input type="hidden" id="classText" name="classText">
             </div>
             <div class="flex flex-col mb-2.5">
               <label for="time" class="flex items-center text-[11px]"><ion-icon name="time" class="mr-0.5"></ion-icon> Thời gian báo cáo</label>
-              <input disabled name="time" id="time" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100" value="<?php echo rebuild_date('H:i l, d/m/Y') ?>"></input>
+              <input disabled name="time" id="time" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100" style="background-color: rgb(243 244 246 / var(--tw-bg-opacity))" value="<?php echo rebuild_date('H:i l, d/m/Y') ?>"></input>
             </div>
             <div class="flex flex-row gap-x-4">
               <div class="flex flex-col flex-1 mb-2.5">
@@ -231,6 +232,17 @@ if ($rel != "page") {
           </form>
         </div>
       </div>
+      <script>
+        var classElement = document.getElementById('class');
+        var classTextElement = document.getElementById('classText');
+
+        if (classElement && classTextElement) {
+          classTextElement.value = classElement.options[0].text;
+          classElement.addEventListener('change', function() {
+            classTextElement.value = this.options[this.selectedIndex].text;
+          });
+        }
+      </script>
       <!-- Right side bar -->
       <?php
       include_once './includes/right-sidebar.php';
