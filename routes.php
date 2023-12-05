@@ -18,6 +18,7 @@ get('/saved', 'views/saved.php');
 get('/report', 'views/report.php');
 get('/report/class', 'views/report.php');
 post('/report/class/confirm', 'views/report-confirm.php');
+post('/report/class/success', 'views/report-success.php');
 get('/report/student', 'views/report-student.php');
 get('/lookup', 'views/lookup.php');
 get('/explore', 'views/explore.php');

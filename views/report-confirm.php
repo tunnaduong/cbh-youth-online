@@ -137,7 +137,7 @@ if ($rel != "page") {
                             <span class="text-[10px] mt-0.5 text-gray-400 text-center">Gửi báo cáo</span>
                         </div>
                     </div>
-                    <form action="/report/class/success" method="get" class="px-5 pb-4">
+                    <form action="/report/class/success" method="post" class="px-5 pb-4">
                         <div class="flex flex-col mb-2.5">
                             <label for="class-name" class="flex items-center text-[11px]">Tên lớp</label>
                             <input type="text" disabled class="text-gray-500" name="class-name" id="class-name" value="<?php echo isset($_POST['classText']) ? $_POST['classText'] : "" ?>">
@@ -166,8 +166,8 @@ if ($rel != "page") {
                             </div>
                             <div class="flex flex-col flex-1 mb-2.5">
                                 <label for="fault2" class="flex items-center text-[11px]">Lỗi vi phạm</label>
-                                <input type="text" disabled class="text-gray-500" name="fault" id="fault" value="<?php echo isset($_POST['fault']) ? ($_POST['fault'] == "" ? "Không có" : $_POST['fault']) : "Không có" ?>">
-                                <input type="hidden" name="fault-code" value="4">
+                                <input type="text" disabled class="text-gray-500" name="mistake" id="mistake" value="<?php echo isset($_POST['mistake']) ? ($_POST['mistake'] == "" ? "Không có" : $_POST['mistake']) : "Không có" ?>">
+                                <input type="hidden" name="mistake-code" value="4">
                             </div>
                         </div>
                         <div class="flex flex-row gap-x-4">

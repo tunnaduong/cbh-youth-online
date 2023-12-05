@@ -217,8 +217,8 @@ if ($rel != "page") {
                 </select>
               </div>
               <div class="flex flex-col flex-1 mb-2.5">
-                <label for="fault" class="flex items-center text-[11px]"><ion-icon name="alert-circle" class="mr-0.5"></ion-icon>Lỗi vi phạm</label>
-                <input placeholder="Nhập một lỗi vi phạm..." name="fault" id="fault" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100"></input>
+                <label for="mistake" class="flex items-center text-[11px]"><ion-icon name="alert-circle" class="mr-0.5"></ion-icon>Lỗi vi phạm</label>
+                <input placeholder="Nhập một lỗi vi phạm..." name="mistake" id="mistake" class="text-gray-500 mt-1 text-[10.5px] rounded-md p-1 bg-gray-100"></input>
               </div>
             </div>
             <div class="flex flex-col mb-3.5">
